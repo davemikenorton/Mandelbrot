@@ -7,7 +7,7 @@ import java.awt.event.*;
 public class Application {
     public static void main(String[] args) {
 
-        Dimension dimension = new Dimension(1600, 1200);
+        Dimension dimension = new Dimension(1800, 1400);
 
         Pen pen = new Pen();
         pen.setDimension(dimension);
@@ -25,12 +25,6 @@ public class Application {
             }
         });
 
-//        pen.addMouseListener(new MouseAdapter() {
-//            @Override
-//            public void mouseClicked(MouseEvent e) {
-//                pen.start(new Dimension(e.getX(), e.getY()));
-//            }
-//        });
 
         var window = new Window(dimension, "Mandelbrot", pen);
     }
